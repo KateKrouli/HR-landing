@@ -1,6 +1,31 @@
-@import 'colors';
-@import 'variables';
-@import 'buttons';
+@font-face {
+  font-family: 'Compliance Sans';
+  src: url("fonts/Faithful.ttf");
+}
+
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url("fonts/PixelifySans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("fonts/Gilroy-Regulat.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("fonts/Gilroy-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("fonts/Gilroy-Bold.ttf");
+  font-weight: 700;
+}
 
 
 * {
@@ -19,7 +44,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.3;
@@ -27,7 +52,7 @@ body {
   -webkit-text-size-adjust: none;
   margin: 0;
   overflow-x: hidden;
-  padding-top: 64px; /* Adjusted for header height */
+  background: var(--Main-Blue, #7280E5);
 }
 
 a {
@@ -72,8 +97,7 @@ p {
 
 .main-width {
   width: 100%;
-  max-width: 1248px;
-  padding: 0 16px;
+  max-width: 1680px;
   margin: 0 auto;
 } 
 
@@ -82,36 +106,11 @@ p {
   font-size: 3.4vw;
   line-height: 125%;
   letter-spacing: -0.04em;
-  color: var(--text-heading-primary);
 
-  @media (min-width: 1440px) { 
-    font-size: 48px;
-  }
-
-  @media (max-width: 767px) { 
-    font-size: 30px;
-    line-height: 127%;
-  }
 }
 
 @import 'header';
 
-@import 'brand';
-
-@import 'main-block';
-
-@import '1xbet';
-
-@import 'players';
-
-@import 'infographics';
-
-@import 'banners';
-
-@import 'faq';
-
-@import 'subscribe-form';
-
-@import 'articles';
+@import 'main-block'; 
 
 @import 'footer';

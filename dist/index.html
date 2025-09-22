@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="title">G&S Team</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <div class="header main-width">
+    <div class="header__controls"></div>
+    <div class="logo"><img src="images/logo.svg"></div>
+    <div class="header__controls header__controls--lang"><div class="custom-lang-dropdown" id="lang-select-wrapper">
+  <button type="button" class="lang-btn" id="lang-select-btn">
+    <span class="lang-flag flag-ru" id="lang-flag-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+        <rect width="28" height="7" fill="#FDFDF5"></rect>
+        <rect y="7" width="28" height="6" fill="#7280E5"></rect>
+        <rect y="13" width="28" height="7" fill="#D54434"></rect>
+      </svg>
+    </span>
+    <span class="lang-arrow">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
+        <path d="M4 8L8 8L8 4L4 4L4 8ZM4 -6.99382e-07L0 -8.74228e-07L-1.74846e-07 4L4 4L4 -6.99382e-07ZM12 4L12 8L16 8L16 4L12 4ZM12 12L12 8L8 8L8 12L12 12ZM16 4L20 4L20 0L16 -1.74846e-07L16 4Z" fill="#FDFDF5"></path>
+      </svg>
+    </span>
+  </button>
+  <ul class="lang-list" id="lang-list" hidden="">
+    <li data-value="ru">
+      <span class="lang-flag flag-ru">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+        <rect width="28" height="7" fill="#FDFDF5"></rect>
+        <rect y="7" width="28" height="6" fill="#7280E5"></rect>
+        <rect y="13" width="28" height="7" fill="#D54434"></rect>
+      </svg>
+      </span>
+    </li>
+    <li data-value="en">
+      <span class="lang-flag flag-en">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_3238_134572)"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F0F0F0"></path><path d="M2.48032 4.69409C1.53771 5.92048 0.826945 7.334 0.413086 8.86958H6.6558L2.48032 4.69409Z" fill="#0052B4"></path><path d="M23.5864 8.86953C23.1725 7.334 22.4617 5.92048 21.5191 4.69409L17.3438 8.86953H23.5864Z" fill="#0052B4"></path><path d="M0.413086 15.1304C0.826992 16.6659 1.53776 18.0794 2.48032 19.3058L6.65566 15.1304H0.413086Z" fill="#0052B4"></path><path d="M19.3053 2.48061C18.0789 1.538 16.6655 0.827236 15.1299 0.41333V6.656L19.3053 2.48061Z" fill="#0052B4"></path><path d="M4.69434 21.5193C5.92073 22.4619 7.33424 23.1727 8.86977 23.5866V17.344L4.69434 21.5193Z" fill="#0052B4"></path><path d="M8.86973 0.41333C7.33419 0.827236 5.92068 1.538 4.69434 2.48056L8.86973 6.65595V0.41333Z" fill="#0052B4"></path><path d="M15.1299 23.5866C16.6654 23.1727 18.0789 22.4619 19.3053 21.5194L15.1299 17.344V23.5866Z" fill="#0052B4"></path><path d="M17.3438 15.1304L21.5191 19.3058C22.4617 18.0795 23.1725 16.6659 23.5864 15.1304H17.3438Z" fill="#0052B4"></path><path d="M23.8984 10.4348H13.5653H13.5653V0.101578C13.0529 0.034875 12.5305 0 12 0C11.4694 0 10.9471 0.034875 10.4348 0.101578V10.4347V10.4347H0.101578C0.034875 10.9471 0 11.4695 0 12C0 12.5306 0.034875 13.0529 0.101578 13.5652H10.4347H10.4347V23.8984C10.9471 23.9651 11.4694 24 12 24C12.5305 24 13.0529 23.9652 13.5652 23.8984V13.5653V13.5653H23.8984C23.9651 13.0529 24 12.5306 24 12C24 11.4695 23.9651 10.9471 23.8984 10.4348Z" fill="#D80027"></path><path d="M15.1309 15.1304L20.4857 20.4852C20.732 20.239 20.9669 19.9817 21.191 19.7148L16.6066 15.1304H15.1309V15.1304Z" fill="#D80027"></path><path d="M8.86951 15.1306H8.86941L3.51465 20.4854C3.76084 20.7317 4.01823 20.9666 4.28504 21.1908L8.86951 16.6062V15.1306Z" fill="#D80027"></path><path d="M8.86976 8.8696V8.86951L3.51495 3.51465C3.26866 3.76084 3.03373 4.01823 2.80957 4.28504L7.39409 8.86955L8.86976 8.8696Z" fill="#D80027"></path><path d="M15.1309 8.86956L20.4857 3.51465C20.2395 3.26837 19.9821 3.03344 19.7153 2.80933L15.1309 7.39384V8.86956Z" fill="#D80027"></path></g><defs><clipPath id="clip0_3238_134572"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+      </span>
+  </li></ul>
+</div>
+
+<style>
+
+.custom-lang-dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+  font-family: inherit;
+}
+
+.lang-btn {
+  display: flex;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 4px solid #FDFDF5;
+  background: #9CA6ED;
+}
+.lang-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}
+
+
+
+arrow {
+  height: 20px;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+.lang-arrow.open svg {
+  transform: rotate(-180deg);
+}
+.lang-list {
+  position: absolute;
+  left: 0;
+  top: 44px;
+  background: #9CA6ED;;
+  border: 4px solid #FDFDF5;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 98px;
+  z-index: 10;
+}
+.lang-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: background 0.15s;
+  color: var(--semantic-neutral-700);
+}
+.lang-list li:hover {
+  background: #f0f0f0;
+}
+
+</style> 
+
+<script>
+// Языковой свитчер: переход на /en/ или /
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.getElementById('lang-select-btn');
+  const list = document.getElementById('lang-list');
+  const wrapper = document.getElementById('lang-select-wrapper');
+  let current = localStorage.getItem('lang') || (window.location.pathname.startsWith('/en/') ? 'en' : 'ru');
+
+  function setActive(val) {
+    localStorage.setItem('lang', val);
+
+    // Обновляем флаг на кнопке
+    if (btn) {
+      const flag = btn.querySelector('.lang-flag');
+      if (val === 'ru') {
+        flag.className = 'lang-flag flag-ru';
+        flag.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 28 20" fill="none">
+          <rect width="28" height="7" fill="#FDFDF5"/>
+          <rect y="7" width="28" height="6" fill="#7280E5"/>
+          <rect y="13" width="28" height="7" fill="#D54434"/>
+        </svg>`;
+      } else {
+        flag.className = 'lang-flag flag-en';
+        flag.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_3238_134572)"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#F0F0F0" /><path d="M2.48032 4.69409C1.53771 5.92048 0.826945 7.334 0.413086 8.86958H6.6558L2.48032 4.69409Z" fill="#0052B4" /><path d="M23.5864 8.86953C23.1725 7.334 22.4617 5.92048 21.5191 4.69409L17.3438 8.86953H23.5864Z" fill="#0052B4" /><path d="M0.413086 15.1304C0.826992 16.6659 1.53776 18.0794 2.48032 19.3058L6.65566 15.1304H0.413086Z" fill="#0052B4" /><path d="M19.3053 2.48061C18.0789 1.538 16.6655 0.827236 15.1299 0.41333V6.656L19.3053 2.48061Z" fill="#0052B4" /><path d="M4.69434 21.5193C5.92073 22.4619 7.33424 23.1727 8.86977 23.5866V17.344L4.69434 21.5193Z" fill="#0052B4" /><path d="M8.86973 0.41333C7.33419 0.827236 5.92068 1.538 4.69434 2.48056L8.86973 6.65595V0.41333Z" fill="#0052B4" /><path d="M15.1299 23.5866C16.6654 23.1727 18.0789 22.4619 19.3053 21.5194L15.1299 17.344V23.5866Z" fill="#0052B4" /><path d="M17.3438 15.1304L21.5191 19.3058C22.4617 18.0795 23.1725 16.6659 23.5864 15.1304H17.3438Z" fill="#0052B4" /><path d="M23.8984 10.4348H13.5653H13.5653V0.101578C13.0529 0.034875 12.5305 0 12 0C11.4694 0 10.9471 0.034875 10.4348 0.101578V10.4347V10.4347H0.101578C0.034875 10.9471 0 11.4695 0 12C0 12.5306 0.034875 13.0529 0.101578 13.5652H10.4347H10.4347V23.8984C10.9471 23.9651 11.4694 24 12 24C12.5305 24 13.0529 23.9652 13.5652 23.8984V13.5653V13.5653H23.8984C23.9651 13.0529 24 12.5306 24 12C24 11.4695 23.9651 10.9471 23.8984 10.4348Z" fill="#D80027" /><path d="M15.1309 15.1304L20.4857 20.4852C20.732 20.239 20.9669 19.9817 21.191 19.7148L16.6066 15.1304H15.1309V15.1304Z" fill="#D80027" /><path d="M8.86951 15.1306H8.86941L3.51465 20.4854C3.76084 20.7317 4.01823 20.9666 4.28504 21.1908L8.86951 16.6062V15.1306Z" fill="#D80027" /><path d="M8.86976 8.8696V8.86951L3.51495 3.51465C3.26866 3.76084 3.03373 4.01823 2.80957 4.28504L7.39409 8.86955L8.86976 8.8696Z" fill="#D80027" /><path d="M15.1309 8.86956L20.4857 3.51465C20.2395 3.26837 19.9821 3.03344 19.7153 2.80933L15.1309 7.39384V8.86956Z" fill="#D80027" /></g><defs><clipPath id="clip0_3238_134572"><rect width="24" height="24" fill="white" /></clipPath></defs></svg>`;
+      }
+    }
+  }
+
+  setActive(current);
+
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    list.hidden = !list.hidden;
+    const arrow = btn.querySelector('.lang-arrow');
+    if (!list.hidden) {
+      arrow.classList.add('open');
+    } else {
+      arrow.classList.remove('open');
+    }
+  });
+
+  list.querySelectorAll('li').forEach(li => {
+    li.addEventListener('click', function() {
+      const val = li.getAttribute('data-value');
+      setActive(val);
+      list.hidden = true;
+      const arrow = btn.querySelector('.lang-arrow');
+      arrow.classList.remove('open');
+      // Перенаправление на нужную страницу
+      if (val === 'en') {
+        window.location.href = '/en/';
+      } else {
+        window.location.href = '/';
+      } 
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!wrapper.contains(e.target)) {
+      list.hidden = true;
+      const arrow = btn.querySelector('.lang-arrow');
+      arrow.classList.remove('open');
+    }
+  });
+});
+</script></div>
+  </div>
+</header>
+
+
+  <main>
+    <div class="main-block main-width">
+  <div class="main-block__container">
+    <div class="main-block__content">
+        <div class="main-block__title">
+            <div class="main-block__title-text main-block__title-text--1">
+                Grown<span>&</span>Scale</div>
+            <div class="main-block__title-text main-block__title-text--2">
+                портал
+           </div>
+        </div>
+        <div class="main-block__subtitle">
+            <div class="main-block__subtitle-text main-block__subtitle-text--1">работа не волк</div>
+            <div class="main-block__subtitle-text main-block__subtitle-text--2">работа это work</div>
+        </div>
+        <div class="main-block__text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="74" viewBox="0 0 44 74" fill="none">
+            <path d="M29.3334 59V44.3333H14.6667V59H29.3334ZM6.10352e-05 59V73.6666H14.6667V59H6.10352e-05ZM14.6667 29.6666H29.3334V15H14.6667V29.6666ZM44.0001 29.6666H29.3334V44.3333H44.0001V29.6666ZM14.6667 15V0.333313H6.10352e-05V15H14.6667Z" fill="#EAF3B2"></path>
+            </svg>
+            <p>G&S-портал — это единое пространство, где собрана ключевая информация о работе для быстрого поиска и адаптации на новом месте</p>
+        </div>
+    </div>
+    <div class="main-block__image">
+        <img src="images/top-img.webp" alt="Grown&Scale">
+        <div class="main-block__image-decor main-block__image-decor--1">
+            <img src="images/arrows.webp" alt="decor">
+        </div>
+        <div class="main-block__image-decor main-block__image-decor--2">
+            <img src="images/cursor.webp" alt="decor">
+        </div>
+        <div class="main-block__image-decor main-block__image-decor--3">я на работе</div>
+    </div>
+  </div>
+</div>
+
+  </main> 
+
+  <footer>
+    <div class="footer main-width">
+        <nav class="footer__nav">
+            <ul>
+               <li><a href="#" data-i18n="header.menuHome"></a></li>
+                <li><a href="#" data-i18n="header.menuAbout"></a></li>
+                <li><a href="#" data-i18n="header.menuContact"></a></li>
+            </ul>
+        </nav>
+        <p data-i18n="footer.copyright">&copy; 2025</p>
+    </div>
+</footer>  
+  
+  <script src="lang.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
