@@ -398,6 +398,43 @@ p {
   gap: 100px;
   padding: 44px 0 14px;
 }
+.salary-planned__block--4 {
+  padding: 14px 0 267px;
+  background: #1D1D1D;
+  gap: 124px;
+}
+.salary-planned__block--5 {
+  background: transparent;
+  padding: 160px 0 400px;
+  gap: 140px;
+}
+.salary-planned__block--imaged {
+  background: #1D1D1D;
+  align-items: center;
+  padding: 0 0 2px;
+}
+.salary-planned__block--6 {
+  background: #1D1D1D url("images/salary-main-title-5.svg") top center repeat-y;
+  padding: 120px 0 280px;
+  margin-top: -2px;
+}
+.salary-planned__block--7 {
+  background: var(--Pink, #F3B2D9);
+  padding: 160px 0 200px;
+}
+.salary-planned__block--8 {
+  background: var(--Main-Yellow, #EAF3B2);
+  padding: 0 0 140px;
+}
+.salary-planned__block--9 {
+  background: var(--Light-Blue, #9FBAF1);
+  padding: 140px 0 50px;
+}
+.salary-planned__block--10 {
+  background: var(--Black, #1D1D1D);
+  padding: 62px 0 200px;
+  gap: 140px;
+}
 .salary-planned__container {
   display: flex;
   flex-direction: column;
@@ -412,6 +449,21 @@ p {
   gap: 120px;
 }
 .salary-planned__container--3 {
+  gap: 100px;
+}
+.salary-planned__container--4 {
+  gap: 100px;
+}
+.salary-planned__container--5 {
+  gap: 80px;
+}
+.salary-planned__container--7 {
+  gap: 120px;
+}
+.salary-planned__container--9 {
+  gap: 120px;
+}
+.salary-planned__container--10 {
   gap: 100px;
 }
 .salary-planned__close-link {
@@ -431,11 +483,22 @@ p {
   text-transform: uppercase;
   cursor: pointer;
 }
+.salary-planned__main-title {
+  text-align: center;
+}
+.salary-planned__main-title--2 {
+  padding: 40px 0 150px;
+  background: var(--Black, #1D1D1D);
+}
+.salary-planned__main-title--3 {
+  margin-top: -35px;
+}
 .salary-planned__title {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   position: relative;
+  z-index: 1;
 }
 .salary-planned__title div {
   display: flex;
@@ -500,6 +563,83 @@ p {
 .salary-planned__title--3 div:nth-child(5) {
   background: var(--Light-Blue, #9FBAF1);
   margin-left: auto;
+}
+.salary-planned__title--4 {
+  width: 1250px;
+}
+.salary-planned__title--4 div:first-child {
+  flex-basis: 100%;
+  padding: 0;
+  border: none;
+}
+.salary-planned__title--4 div:first-child div {
+  background: var(--Pink, #F3B2D9);
+  padding: 12px 32px;
+  border: 8px solid #000;
+  margin-left: 225px;
+}
+.salary-planned__title--4 div:nth-child(2), .salary-planned__title--4 div:nth-child(3) {
+  background: var(--Main-Blue, #7280E5);
+}
+.salary-planned__title--4 div:nth-child(4) {
+  background: var(--Light-Blue, #9FBAF1);
+}
+.salary-planned__title--4 div:nth-child(5) {
+  background: var(--Main-Yellow, #EAF3B2);
+  margin-left: 365px;
+}
+.salary-planned__title--4 div:nth-child(6) {
+  background: var(--Yellow-bright, #F4CE24);
+}
+.salary-planned__title--4 div:nth-child(7) {
+  background: var(--Main-Yellow, #EAF3B2);
+}
+.salary-planned__title--5 div:first-child {
+  background: var(--Pink, #F3B2D9);
+}
+.salary-planned__title--5 div:nth-child(2) {
+  background: var(--Main-Yellow, #EAF3B2);
+}
+.salary-planned__title--5 div:nth-child(3) {
+  background: var(--Yellow-bright, #F4CE24);
+}
+.salary-planned__title--7 {
+  width: 1100px;
+}
+.salary-planned__title--7 div:first-child {
+  background: var(--Pink, #F3B2D9);
+  margin-left: 300px;
+}
+.salary-planned__title--7 div:nth-child(2) {
+  background: var(--Main-Yellow, #EAF3B2);
+}
+.salary-planned__title--7 div:nth-child(3) {
+  background: var(--Light-Blue, #9FBAF1);
+  margin-left: auto;
+}
+.salary-planned__title--8 div:first-child {
+  background: var(--Main-Yellow, #EAF3B2);
+}
+.salary-planned__title--8 div:nth-child(2) {
+  background: var(--Main-Yellow, #EAF3B2);
+}
+.salary-planned__title--8 div:nth-child(3) {
+  background: var(--Light-Blue, #9FBAF1);
+}
+.salary-planned__title--9 div:first-child {
+  background: var(--Yellow-bright, #F4CE24);
+}
+.salary-planned__title--9 div:nth-child(2) {
+  background: var(--Pink, #F3B2D9);
+}
+.salary-planned__title--9 div:nth-child(3) {
+  background: var(--Light-Blue, #9FBAF1);
+}
+.salary-planned__title--10 div {
+  background: var(--Main-Blue, #7280E5);
+}
+.salary-planned__title--10 div:first-child {
+  background: var(--Yellow-bright, #F4CE24);
 }
 .salary-planned .principles {
   position: relative;
@@ -837,6 +977,494 @@ p {
 }
 .salary-planned .matrix__factor:nth-child(5) {
   width: 533px;
+}
+.salary-planned .example__image {
+  position: relative;
+}
+.salary-planned .example__decor {
+  position: absolute;
+  top: 50px;
+  right: -40px;
+}
+.salary-planned .example__decor--1 {
+  top: 0px;
+  right: 310px;
+}
+.salary-planned .example__decor--2 {
+  top: auto;
+  bottom: -268px;
+  right: auto;
+  left: 30%;
+}
+.salary-planned .rooles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  max-width: 1394px;
+}
+.salary-planned .rooles__note {
+  display: inline-flex;
+  padding: 12px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  border: 8px solid var(--Black, #1D1D1D);
+  background: var(--White, #FDFDF5);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 160%;
+}
+.salary-planned .rooles__items {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 80px;
+}
+.salary-planned .rooles__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.salary-planned .rooles__item-number {
+  display: flex;
+  width: 64px;
+  padding: 6px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 4px solid var(--Black, #1D1D1D);
+  background: var(--Pink, #F3B2D9);
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+.salary-planned .rooles__item-text {
+  width: 100%;
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--Main-Yellow, #EAF3B2);
+  box-shadow: 0 17px 0 0 #3F4679;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.salary-planned .rooles__decor {
+  position: absolute;
+}
+.salary-planned .rooles__decor--1 {
+  right: 20px;
+  top: -30px;
+}
+.salary-planned .rooles__decor--2 {
+  left: 150px;
+  top: 150px;
+}
+.salary-planned .rooles__decor--3 {
+  left: -40px;
+  top: 380px;
+}
+.salary-planned .rooles__decor--4 {
+  right: 0;
+  top: 1000px;
+}
+.salary-planned .rooles__decor--5 {
+  right: 20px;
+  bottom: -570px;
+}
+.salary-planned .rooles__decor--6 {
+  left: -40px;
+  bottom: -730px;
+}
+.salary-planned .rooles__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -320px;
+}
+.salary-planned .rooles__image div {
+  display: inline-flex;
+  padding: 11px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 4px solid var(--Black, #1D1D1D);
+  background: var(--White, #FDFDF5);
+  font-family: "Pixelify Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  z-index: 1;
+}
+.salary-planned .rooles--2 .rooles__note {
+  background: var(--Yellow-bright, #F4CE24);
+}
+.salary-planned .rooles--2 .rooles__item-text {
+  background: var(--Main-Blue, #7280E5);
+  color: var(--White, #FDFDF5);
+  position: relative;
+}
+.salary-planned .rooles--2 .rooles__item-text a {
+  color: var(--Pink, #F3B2D9);
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 160%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.salary-planned .rooles--2 .rooles__item-text b {
+  font-style: italic;
+}
+.salary-planned .rooles--2 .rooles__item {
+  position: relative;
+}
+.salary-planned .rooles--2 .rooles__item:after {
+  content: "";
+  position: absolute;
+}
+.salary-planned .rooles--2 .rooles__item:first-child:after {
+  top: 55%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 331px;
+  background: url(../images/line-4.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .rooles--2 .rooles__item:nth-child(2):after {
+  top: 65%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 264px;
+  background: url(../images/line-5.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .rooles--2 .rooles__item:nth-child(3):after {
+  top: 65%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 250px;
+  background: url(../images/line-5.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .time__image {
+  position: relative;
+}
+.salary-planned .time__decor {
+  position: absolute;
+  top: 50px;
+  right: -40px;
+}
+.salary-planned .time__items {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.salary-planned .time__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+}
+.salary-planned .time__item-title {
+  display: flex;
+  padding: 12px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  border: 8px solid var(--Light-Blue, #9FBAF1);
+  background: var(--White, #FDFDF5);
+  color: var(--Light-Blue, #9FBAF1);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: -0.88px;
+}
+.salary-planned .time__item-text {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 20px;
+  background: var(--Light-Blue, #9FBAF1);
+  color: var(--White, #FDFDF5);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.salary-planned .time__item-text ul {
+  margin: 0;
+}
+.salary-planned .refuse {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  margin-top: -100px;
+}
+.salary-planned .refuse__image {
+  position: relative;
+}
+.salary-planned .refuse__image div {
+  display: inline-flex;
+  padding: 11px 36px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 4px solid var(--Black, #1D1D1D);
+  background: var(--White, #FDFDF5);
+  font-family: "Pixelify Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 51px;
+  right: -110px;
+}
+.salary-planned .refuse__content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: 47px;
+  flex: 1;
+}
+.salary-planned .refuse__items {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  gap: 40px;
+  width: 820px;
+}
+.salary-planned .refuse__item {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 20px 0 20px 20px;
+  border: 8px solid var(--Dark-Blue, #3F4679);
+  background: var(--White, #FDFDF5);
+  box-shadow: 0 17px 0 0 #3F4679;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 160%;
+}
+.salary-planned .steps {
+  width: 1394px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  z-index: 1;
+}
+.salary-planned .steps__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.salary-planned .steps__item-number {
+  display: flex;
+  width: 64px;
+  padding: 6px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 4px solid var(--Main-Yellow, #EAF3B2);
+  background: var(--Pink, #F3B2D9);
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+.salary-planned .steps__item-text {
+  width: 100%;
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--Pink, #F3B2D9);
+  box-shadow: 0 17px 0 0 #EAF3B2;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 160%;
+  position: relative;
+}
+.salary-planned .steps__item:after {
+  content: "";
+  position: absolute;
+}
+.salary-planned .steps__item:first-child:after {
+  top: 55%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 435px;
+  background: url(../images/line-7.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .steps__item:nth-child(2):after {
+  top: 62%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 328px;
+  background: url(../images/line-8.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .steps__item:nth-child(3):after {
+  top: 65%;
+  left: 100%;
+  transform: translate(-13px);
+  width: 109px;
+  height: 296px;
+  background: url(../images/line-9.webp) no-repeat center;
+  background-size: contain;
+  z-index: 1;
+}
+.salary-planned .steps__subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 480px;
+  gap: 10px;
+  transform: rotate(-7.43deg);
+  align-self: flex-start;
+  margin-left: -50px;
+  margin-top: -30px;
+}
+.salary-planned .steps__subtitle div {
+  display: inline-flex;
+  padding: 11px 36px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 4px solid var(--Black, #1D1D1D);
+  background: var(--White, #FDFDF5);
+  font-family: "Pixelify Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.salary-planned .steps__subtitle div:nth-child(2) {
+  margin-left: auto;
+}
+.salary-planned .steps__subtitle div:nth-child(3) {
+  margin: auto;
+}
+.salary-planned .steps__decor {
+  position: absolute;
+  z-index: 0;
+}
+.salary-planned .steps__decor--1 {
+  right: 15px;
+  top: 15px;
+}
+.salary-planned .steps__decor--2 {
+  left: -50px;
+  top: 200px;
+}
+.salary-planned .steps__decor--3 {
+  left: -80px;
+  top: 745px;
+}
+.salary-planned .steps__decor--4 {
+  left: 510px;
+  bottom: -10px;
+}
+.salary-planned .steps__decor--5 {
+  right: -10px;
+  bottom: -20px;
+}
+.salary-planned .requirements {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+  height: 875px;
+  position: relative;
+}
+.salary-planned .requirements__item {
+  display: flex;
+  padding: 36px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+  border-radius: 20px;
+  border: 4px solid var(--White, #FDFDF5);
+  background: var(--Black, #1D1D1D);
+  color: var(--White, #FDFDF5);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 160%;
+  width: calc((100% - 40px) / 2);
+  position: relative;
+}
+.salary-planned .requirements__item:last-child {
+  padding: 0;
+  border: none;
+  flex-direction: row;
+}
+.salary-planned .requirements__image {
+  position: absolute;
+  width: 940px;
+}
+.salary-planned .requirements__image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 500px;
+  align-self: flex-start;
+  margin-left: -250px;
+  margin-top: -290px;
+}
+.salary-planned .requirements__image-text div {
+  display: inline-flex;
+  padding: 11px 26px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 4px solid var(--Black, #1D1D1D);
+  background: var(--White, #FDFDF5);
+  color: var(--Black, #1D1D1D);
+  font-family: "Pixelify Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+.salary-planned .requirements__decor {
+  position: absolute;
 }
 
 footer {
