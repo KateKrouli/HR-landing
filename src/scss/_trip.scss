@@ -1,0 +1,104 @@
+.trip {
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        &--1 {
+            background: var(--Main-Blue, #7280E5);
+            padding: 60px 0 160px;  
+            gap: 120px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &--1 {
+            gap: 80px;
+        }
+    }
+
+    &__main-title {
+        text-align: center;
+    }
+
+     &__title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+        z-index: 1;
+
+        div {
+            display: flex;
+            padding: 12px 32px;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 20px;
+            border: 8px solid #000;
+            
+            font-family: "Compliance Sans";
+            font-size: 80px;
+            
+            line-height: 100%;
+            text-transform: uppercase;
+        }
+
+        &--1 {
+            div {
+                background: var(--Light-Blue, #9FBAF1);
+
+                &:nth-child(2) {
+                   background: var(--Main-Yellow, #EAF3B2);
+                }
+
+            }
+        }
+    }
+
+    .rules {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        &__note {
+            display: inline-flex;
+            padding: 12px 32px;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 20px;
+            border: 8px solid var(--Black, #1D1D1D);
+            background: var(--White, #FDFDF5);
+            font-weight: 700;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            width: 1107px;
+        }
+
+        &__item {
+            padding: 40px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            border-radius: 20px;
+            border: 4px solid var(--Black, #1D1D1D);
+            background: var(--Light-Blue, #9FBAF1);
+            font-weight: 500;
+
+            b {
+                color: var(--White, #FDFDF5);
+                font-style: italic;
+                font-weight: 600;
+            }
+        }
+    }
+}

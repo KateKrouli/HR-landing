@@ -199,10 +199,24 @@
 
         .main-block__content {
             padding-top: 110px;
+
+            &-decor {
+                position: absolute;
+
+                &--1 {
+                    top: 0;
+                    left: 110px;
+                }
+
+               &--2 {
+                    bottom: 80px;
+                    right: 160px;
+                }
+            }
         }
 
         .main-block__text {
-             margin-top: 130px;
+             margin-top: 80px;
 
             p {
                 color: var(--Black, #1D1D1D);
@@ -211,8 +225,13 @@
         }
         .main-block__subtitle {
             width: 455px;
-            margin-top: 130px;
+            margin-top: 80px;
             margin-left: 30px;
+        }
+
+        .main-block__image {
+            z-index: 1;
+            margin-bottom: -100px;
         }
 
         .main-block__image-decor--1 {
